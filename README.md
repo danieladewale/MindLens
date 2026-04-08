@@ -43,8 +43,10 @@ NLProject/
 │   ├── index.html
 │   ├── package.json
 │   └── vite.config.js
-├── app.py                  # Flask REST API
-├── predict.py              # Model inference logic
+├── backend/                # Flask REST API
+│   ├── app.py              # API server
+│   ├── predict.py          # Model inference logic
+│   └── requirements.txt
 ├── .gitignore
 └── README.md
 ```
@@ -66,7 +68,8 @@ Visit `http://localhost:5173`
 ### Backend (when model is ready)
 
 ```bash
-pip install flask flask-cors
+cd backend
+pip install -r requirements.txt
 python app.py
 ```
 
