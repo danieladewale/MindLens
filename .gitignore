@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Models (too large for git)
+models/*.pt
+models/*.bin
+models/*.pkl
+models/*.joblib
+
+# Data
+data/*.csv
+data/*.json
+data/*.tsv
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+frontend/dist/
+*.egg-info/
